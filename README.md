@@ -1,16 +1,16 @@
-![Twizlrs](https://github.com/jaredwilli/twizlr-playground/blob/master/src/img/twizlr.png?raw=true) 
+![Twizlrs](https://github.com/jaredwilli/twizlr-playground/blob/master/src/img/twizlr.png?raw=true)
 
 Makes mouths happy...
 
-[![Build Status](https://travis-ci.org/jaredwilli/react-twizlr.svg?branch=build-path)](https://travis-ci.org/jaredwilli/react-twizlr)
-[![codebeat badge](https://codebeat.co/badges/1396f00a-f7ce-43a0-af73-1bfc2298213c)](https://codebeat.co/projects/github-com-jaredwilli-react-twizlr-master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jaredwilli/react-twizlr.svg)](https://greenkeeper.io/)
-[![dependencies Status](https://david-dm.org/jaredwilli/react-twizlr/status.svg)](https://david-dm.org/jaredwilli/react-twizlr)
+[![Build Status](https://travis-ci.org/jaredwilli/twizlr-playground.svg?branch=build-path)](https://travis-ci.org/jaredwilli/twizlr-playground)
+[![codebeat badge](https://codebeat.co/badges/1396f00a-f7ce-43a0-af73-1bfc2298213c)](https://codebeat.co/projects/github-com-jaredwilli-twizlr-playground-master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaredwilli/twizlr-playground.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/jaredwilli/twizlr-playground/status.svg)](https://david-dm.org/jaredwilli/twizlr-playground)
 
 --------
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![License:](https://img.shields.io/npm/l/cross-env.svg?style=flat-square)](https://github.com/jaredwilli/react-twizlr/blob/master/other/LICENSE)
+[![License:](https://img.shields.io/npm/l/cross-env.svg?style=flat-square)](https://github.com/jaredwilli/twizlr-playground/blob/master/other/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 
@@ -25,8 +25,8 @@ Twizler is a set of React components that was originally part of the app Weberno
 
 ## Clone && cd && yarn
 ```
-git clone git@github.com:jaredwilli/react-twizlr.git
-cd react-twizlr
+git clone git@github.com:jaredwilli/twizlr-playground.git
+cd twizlr-playground
 yarn
 ```
 
