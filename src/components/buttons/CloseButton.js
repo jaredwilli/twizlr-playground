@@ -13,7 +13,7 @@ const CloseButton = ({
 		type={ type }
         style={ style }
         aria-label="Close"
-        className={`${className} close`}
+        className={`twizlr ${className} close`}
         onClick={ event => props.onClick(event) }>
         { !props.icon && <span aria-hidden="true">&times;</span> }
         { props.icon && <span aria-hidden="true">{ props.icon }</span> }
@@ -22,7 +22,7 @@ const CloseButton = ({
 
 CloseButton.propTypes = {
     className: PropTypes.string,
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
     style: PropTypes.object,
     onClick: PropTypes.func.isRequired
 };

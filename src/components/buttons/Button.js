@@ -13,7 +13,8 @@ const Button = ({
     <button
         type={ type }
         style={ style }
-        className={`${className} btn`}
+        aria-label="Button"
+        className={`twizlr ${className} button`}
         onClick={ event => props.onClick(event) }>
         { children }
     </button>
@@ -23,7 +24,7 @@ Button.propTypes = {
     className: PropTypes.string,
     type: PropTypes.string,
     style: PropTypes.object,
-    onClick: PropTypes.func,
+    onClick: PropTypes.func.isRequired,
     children: PropTypes.oneOfType([
         PropTypes.node,
         PropTypes.object

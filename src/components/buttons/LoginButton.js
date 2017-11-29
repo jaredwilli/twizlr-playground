@@ -12,10 +12,12 @@ const LoginButton = ({
 	...props
 }) => (
 	<button
-		type={ type }
 		style={ style }
-		className={`${className} btn login-button`}
+		type={ type }
+        aria-label="Login"
+		className={`twizlr ${className} login-button`}
 		onClick={ () => props.onClick(provider) }>
+
 		<i className={`fa fa-${className}`} />
 		<span className="btn-text">
 			{`Sign in with ${displayName}`}
@@ -25,7 +27,7 @@ const LoginButton = ({
 
 LoginButton.propTypes = {
     style: PropTypes.object,
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
     className: PropTypes.string.isRequired,
 	displayName: PropTypes.string.isRequired,
     provider: PropTypes.string.isRequired,

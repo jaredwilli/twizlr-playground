@@ -22,3 +22,14 @@
 .App-intro {
 	font-size: large;
 }
+
+
+/* Component styles */
+
+.custom-button {
+    background: #ff6bd2;
+    border: 1px solid #6e004d;
+    border-radius: 2px;
+    color: #770045;
+    padding: 5px 20px;
+}

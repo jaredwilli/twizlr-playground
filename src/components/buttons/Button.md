@@ -1,39 +1,50 @@
 
-
 ```js
-<Button
-    onClick={ () => alert('Plain ol button') } />
-```
+<div className="btn-group">
+    <Button
+        className="custom-button"
+        style={{color: '#000' }}
+        onClick={() => alert('Custom button')}>
+        Custom
+    </Button>
 
-```js
-<Button
-    className="primary icon-button"
-    onClick={ () => alert('Primary button') }>
-    <i className={ `fa fa-times` } />
-    Info Button
-</Button>
-```
+    <Button
+        className="primary icon-button"
+        onClick={() => alert('Primary button')}>
+        <i className={`fa fa-check`} />
+        Primary
+    </Button>
 
-```js
-<Button
-    className="info icon-button"
-    onClick={ () => alert('Info button') }>
-    Info Button
-</Button>
-```
+    <Button
+        className="warning"
+        style={{margin: '0 10px' }}
+        onClick={() => alert('Warning button')}>
+        Caution
+    </Button>
 
-```js
-<Button
-    className="warning"
-    style={{ width: '200px', margin: '0 10px' }}
-    onClick={ () => alert('Warning button') }>
-    <span style={{ fontSize: '22px' }}>onClick</span>
-</Button>
-```
+    <Button
+        className="info"
+        onClick={() => alert('Ino=fo button')} />
 
-```js
-<Button
-    className="success"
-    style={{ color: '#000' }}
-    onClick={ () => alert('Success button') } />
+    <Button
+        className="success"
+        onClick={() => alert('Success button')}>
+        Success
+    </Button>
+
+    <Button
+        className="danger"
+        onClick={() => alert('Danger button')}>
+        Danger
+    </Button>
+
+    <Button
+        className="inverse"
+        style={{color: '#fff' }}
+        onClick={() => alert('Inverse button')} />
+
+    <Button
+        className="faded"
+        onClick={() => alert('Faded button')} />
+</div>
 ```

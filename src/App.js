@@ -21,39 +21,66 @@ class App extends Component {
 
                 <h2>Button</h2>
 
-                <div className="buttons">
-                    <Button />
+                <Button
+                    className="custom-button"
+                    onClick={ () => buttonClicked() }>
+                    Custom
+                </Button>
+                <Button
+                    className="primary icon-button"
+                    onClick={ () => buttonClicked() }>
+                    <i className="fa fa-check margin-right" />
+                    Primary
+                </Button>
+                <Button
+                    className="warning"
+                    style={{ margin: '0 10px' }}
+                    onClick={ () => buttonClicked() } />
+                <Button
+                    className="info"
+                    onClick={ () => buttonClicked() } />
+                <Button
+                    className="success"
+                    style={{ color: '#000' }}
+                    onClick={ () => buttonClicked() } />
+                <Button
+                    className="danger"
+                    onClick={ () => buttonClicked() } />
+                <Button
+                    className="inverse"
+                    style={{ color: '#fff' }}
+                    onClick={ () => alert('Inverse button') }>
+                    <i className={`fa fa-times`} />
+                </Button>
+                <Button
+                    className="faded"
+                    style={{ color: '#000' }}
+                    onClick={ () => alert('Faded button') } />
 
-                    <Button className="icon-button">
-                        <i className={`fa fa-times`} />
-                        Delete
-                    </Button>
-
-                    <Button
-                        style={{ width: '200px', margin: '0 10px' }}
-                        onClick={() => buttonClicked()} />
-
-                    <Button
-                        style={{ background: '#3bd00b', color: '#000' }}
-                        onClick={() => buttonClicked()} />
-                </div>
+                {/************************/}
 
                 <h2>CloseButton</h2>
 
-                <CloseButton />
+                <CloseButton
+                    onClick={ () => buttonClicked() }/>
+
+                <CloseButton
+                    onClick={ () => buttonClicked() }/>
+
+                {/************************/}
+
 
                 <h2>LoginButton</h2>
 
                 <div className="login-buttons">
-                    {(PROVIDERS.map(prov =>
+                    {PROVIDERS.map(prov =>
                         <LoginButton
-                            displayName={ prov.className }
+                            displayName={ prov.displayName }
                             provider={ prov.provider }
                             className={ prov.className }
-                            onClick={() => alert(prov.provider)} />
-                    ))}
+                            onClick={ () => alert(prov.provider) } />
+                    )}
                 </div>
-
             </div>
         );
 	}
