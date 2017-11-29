@@ -1,11 +1,6 @@
 
-![Twizlrs](./src/img/twizlr.png)
-
-# Makes mouths happy...
+# Twizlrs - Makes mouths happy...
 ---------
-
-![Makes mouths happy](./src/img/twiz.png)
-
 
 [![Build Status](https://travis-ci.org/jaredwilli/react-twizlr.svg?branch=build-path)](https://travis-ci.org/jaredwilli/react-twizlr)
 [![codebeat badge](https://codebeat.co/badges/1396f00a-f7ce-43a0-af73-1bfc2298213c)](https://codebeat.co/projects/github-com-jaredwilli-react-twizlr-master)
