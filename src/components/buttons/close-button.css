@@ -1,53 +1,15 @@
 /* Button.css */
 
-:local(.close) {
-    background: #fff;
-    border: 1px solid #828c93;
-    border-radius: 2px;
+.close {
+    background: none;
+    border: 0;
     color: #333;
     font-size: 14px;
     padding: 6px 10px;
     margin: 5px;
-    cursor: pointer;
-}
-
-:local(.close:hover) {
-    background: #068dcc;
-    border: 1px solid #333;
-    color: #fff;
-}
-
-/*
-.hamburger {
-    background: none;
-    border: 0;
-    border-right: 1px solid rgba(64, 64, 64, 0.75);
-    border-radius: 0;
-	box-shadow: 1px 0px 0 0 rgba(255, 255, 255, 0.52);
-    padding: 5px 12px 7px;
-}
-
-.fa {
-    font-size: 14px;
-}
-
-.close {
-	background: none;
-	border: 0;
-    color: #333;
-	text-shadow: 0 1px 0 #fff;
-	font-size: 18px;
-    font-weight: normal;
-    font-family: "Myriad Pro", "Helvetica Neue", "Helvetica", "Arial";
-	line-height: 1;
-	padding: 0 3px;
-	cursor: pointer;
-    opacity: 0.5;
-    outline: 0;
 }
 
 .close:hover {
     color: #D0021B;
-    opacity: 1;
+    cursor: pointer;
 }
-*/

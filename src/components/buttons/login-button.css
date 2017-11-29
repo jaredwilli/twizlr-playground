@@ -1,65 +1,45 @@
 /* login-button.css */
 
-:local(.button) {
-    background: #fff;
-    border: 1px solid #828c93;
-    border-radius: 2px;
-    color: #333;
-    font-size: 14px;
-    padding: 6px 10px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-:local(.button:hover) {
-    background: #068dcc;
-    border: 1px solid #333;
-    color: #fff;
-}
-
-:local(.fa) {
-    margin-right: 10px;
-}
-
-:local(.login-button) {
+.login-button {
     border-radius: 4px;
     color: #fff;
     font-size: 16px;
     text-align: left;
-    width: 240px;
-    margin: 5px 0;
+    width: 220px;
+    margin: 5px;
     padding: 0;
 }
 
-:local(.fa) {
+.login-button i {
     border-right: 1px solid #000;
     padding: 0 10px;
     height: 35px;
-    width: 35px;
+    width: 15px;
     line-height: 35px;
     text-align: center;
 }
 
-:local(.btnText) {
+.login-button .btn-text {
     padding: 0 10px;
 }
 
-:local(.facebook) {
+
+.facebook {
     background: #3a589a;
     border-color: #2e457b;
 }
 
-:local(.google) {
+.google {
     background: #df4a33;
     border-color: #b93d2a;
 }
 
-:local(.twitter) {
+.twitter {
     background: #51aaf1;
     border-color: #4594d0;
 }
 
-:local(.github) {
+.github {
     background: #444444;
     border-color: #373737;
 }

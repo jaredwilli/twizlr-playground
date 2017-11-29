@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './button.css';
+import './button.css';
 
 const Button = ({
 	type = 'button',
-	className = '',
+	className = 'primary',
     style = {},
     children = 'Submit',
 	...props
@@ -13,11 +13,12 @@ const Button = ({
     <button
         type={ type }
         style={ style }
-        className={`btn ${className} ${styles.button}`}
+        className={`${className} btn`}
         onClick={ event => props.onClick(event) }>
         { children }
     </button>
 );
+
 Button.propTypes = {
     className: PropTypes.string,
     type: PropTypes.string,

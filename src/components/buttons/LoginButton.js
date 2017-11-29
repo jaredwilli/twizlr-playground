@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './login-button.css';
+import './login-button.css';
 
 const LoginButton = ({
 	style = {},
@@ -12,12 +12,12 @@ const LoginButton = ({
 	...props
 }) => (
 	<button
-		type={type}
-		style={style}
-		className={`btn ${style[provider]}`}
-		onClick={() => props.onClick(provider)}>
+		type={ type }
+		style={ style }
+		className={`${className} btn login-button`}
+		onClick={ () => props.onClick(provider) }>
 		<i className={`fa fa-${className}`} />
-		<span className="btnText">
+		<span className="btn-text">
 			{`Sign in with ${displayName}`}
 		</span>
 	</button>

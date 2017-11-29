@@ -17,45 +17,55 @@ const Twizlr = (Component) => {
         <div>
             <h1>Twizlr Components</h1>
 
-            <h2>Button</h2>
-            <Button />
 
-            <Button className="primary icon-button">
-                <i className={`fa fa-times`} />
-                Delete
+            <h2>Button</h2>
+
+            <Button
+                onClick={ () => buttonClicked() } />
+
+            <Button
+                className="primary icon-button"
+                onClick={ () => buttonClicked() }>
+                <i className={`fa fa-check`} />
+                Primary
             </Button>
 
             <Button
                 className="warning"
-                style={{ width: '200px', margin: '0 10px' }}
-                onClick={() => buttonClicked()} />
+                style={{ margin: '0 10px' }}
+                onClick={ () => buttonClicked() } />
+
+            <Button
+                className="info"
+                onClick={ () => buttonClicked() } />
 
             <Button
                 className="success"
                 style={{ color: '#000' }}
-                onClick={() => buttonClicked()} />
+                onClick={ () => buttonClicked()  />
 
             <Button
                 className="danger"
                 style={{ color: '#000' }}
-                onClick={() => buttonClicked()} />
+                onClick={ () => buttonClicked() } />
+
 
             <h2>CloseButton</h2>
 
             <CloseButton />
 
+
             <h2>LoginButton</h2>
 
             <div className="login-buttons">
-                {(PROVIDERS.map(prov =>
+                {PROVIDERS.map(prov =>
                     <LoginButton
-                        displayName={ prov.className }
+                        displayName={ prov.displayName }
                         provider={ prov.provider }
                         className={ prov.className }
-                        onClick={() => alert(prov.provider)} />
-                ))}
+                        onClick={ () => alert(prov.provider) } />
+                )}
             </div>
-
         </div>
     );
 };

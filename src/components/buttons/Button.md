@@ -1,15 +1,24 @@
 
 
 ```js
-<Button />
+<Button
+    onClick={ () => alert('Plain ol button') } />
 ```
 
 ```js
 <Button
     className="primary icon-button"
-    onClick={() => alert('Primary button')}>
+    onClick={ () => alert('Primary button') }>
     <i className={ `fa fa-times` } />
-    Icon Button
+    Info Button
+</Button>
+```
+
+```js
+<Button
+    className="info icon-button"
+    onClick={ () => alert('Info button') }>
+    Info Button
 </Button>
 ```
 
@@ -17,7 +26,7 @@
 <Button
     className="warning"
     style={{ width: '200px', margin: '0 10px' }}
-    onClick={() => alert('Warning button onClick handler')}>
+    onClick={ () => alert('Warning button') }>
     <span style={{ fontSize: '22px' }}>onClick</span>
 </Button>
 ```
@@ -26,5 +35,5 @@
 <Button
     className="success"
     style={{ color: '#000' }}
-    onClick={() => alert('Submit handler')}>
+    onClick={ () => alert('Success button') } />
 ```

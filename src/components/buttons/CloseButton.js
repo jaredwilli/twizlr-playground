@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './close-button.css';
+
 const CloseButton = ({
 	type = 'button',
 	className = '',
@@ -11,7 +13,7 @@ const CloseButton = ({
 		type={ type }
         style={ style }
         aria-label="Close"
-        className={`${props.className} close`}
+        className={`${className} close`}
         onClick={ event => props.onClick(event) }>
         { !props.icon && <span aria-hidden="true">&times;</span> }
         { props.icon && <span aria-hidden="true">{ props.icon }</span> }
@@ -20,7 +22,7 @@ const CloseButton = ({
 
 CloseButton.propTypes = {
     className: PropTypes.string,
-    type: PropTypes.string,
+    type: PropTypes.string.isRequired,
     style: PropTypes.object,
     onClick: PropTypes.func.isRequired
 };
