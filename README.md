@@ -2,10 +2,6 @@
 # Twizlrs - Makes mouths happy...
 ---------
 
-[(https://user-images.githubusercontent.com/218374/33354454-043c96c6-d481-11e7-8b53-4fda9dae0f73.png)]
-[(https://user-images.githubusercontent.com/218374/33354451-00e8f14a-d481-11e7-8457-2d9906bdb247.png)]
-
-
 [![Build Status](https://travis-ci.org/jaredwilli/react-twizlr.svg?branch=build-path)](https://travis-ci.org/jaredwilli/react-twizlr)
 [![codebeat badge](https://codebeat.co/badges/1396f00a-f7ce-43a0-af73-1bfc2298213c)](https://codebeat.co/projects/github-com-jaredwilli-react-twizlr-master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/jaredwilli/react-twizlr.svg)](https://greenkeeper.io/)
